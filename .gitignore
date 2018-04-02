@@ -1,0 +1,4 @@
+node_modules/
+babelconfig
+src/playground/
+yarn-error.log
