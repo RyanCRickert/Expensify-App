@@ -1,10 +1,12 @@
 import React from "react";
 import ExpenseList from "./ExpenseList";
-import ExpenseListFilters from "./ExpenseListFilters"
+import ExpenseListFilters from "./ExpenseListFilters";
+import ExpenseSummary from "./ExpenseSummary";
 
 export default () => (
-    <div>
-        <ExpenseListFilters />
-        <ExpenseList />
-    </div>
+  <div>
+    <ExpenseSummary />
+    <ExpenseListFilters />
+    <ExpenseList />
+  </div>
 );

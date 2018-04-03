@@ -3,7 +3,7 @@ import moment from "moment";
 import { SingleDatePicker } from "react-dates";
 import "react-dates/initialize";
 
-class ExpenseForm extends React.Component {
+export default class ExpenseForm extends React.Component {
 	constructor(props) {
 		super(props);
 
@@ -57,9 +57,6 @@ class ExpenseForm extends React.Component {
 				createdAt: this.state.createdAt.valueOf(),
 				note: this.state.note
 			});
-			// this.setState(() => ({ description: ""}));
-			// this.setState(() => ({ amount: ""}));
-			// this.setState(() => ({ note: ""}));
 		}
 	};
 
@@ -101,4 +98,4 @@ class ExpenseForm extends React.Component {
 	}
 }
 
-export default ExpenseForm;
+//export default ExpenseForm;
