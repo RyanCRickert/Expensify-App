@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod",
-    "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
@@ -21,12 +20,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.3",
     "express": "^4.16.3",
-    "jest": "^22.4.3",
-    "live-server": "^1.2.0",
     "mini-css-extract-plugin": "^0.4.0",
     "moment": "^2.21.0",
     "node-sass": "^4.7.2",
@@ -39,7 +33,6 @@
     "react-modal": "^3.3.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
-    "react-test-renderer": "^16.2.0",
     "redux": "^3.7.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
@@ -47,7 +40,14 @@
     "uuid": "^3.2.1",
     "validator": "^9.4.1",
     "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13",
+    "webpack-cli": "^2.0.13"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
+    "jest": "^22.4.3",
+    "react-test-renderer": "^16.2.0",
     "webpack-dev-server": "^3.1.1"
   }
 }
