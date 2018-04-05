@@ -23,32 +23,19 @@ test("should setup remove expense action object", () => {
   });
 });
 
-
-
-
-
-
-
 test("should remove expense from firebase", (done) => {
   const store = createMockStore({});
 
   store.dispatch(startRemoveExpense(expenses[0])).then(() => {
     const actions = store.getActions();
 
-    expect(actions[0]).toBe(undefined);
+    expect(actions[0]).toEqual({
+      type: "REMOVE_EXPENSE",
+      id: undefined
+    });
     done();
   });
 });
-
-
-
-
-
-
-
-
-
-
 
 test("should setup edit expense action object", () => {
   const action = editExpense("123abc", {note: "New note value"});
