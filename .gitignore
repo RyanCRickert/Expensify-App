@@ -3,3 +3,5 @@ babelconfig
 src/playground/
 yarn-error.log
 public/dist/
+.env.test
+.env.development
