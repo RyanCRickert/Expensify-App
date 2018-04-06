@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should call startLogin on button click 1`] = `
+<div>
+  <p>
+    Please login
+  </p>
+  <button
+    onClick={[MockFunction]}
+  >
+    Login
+  </button>
+</div>
+`;
+
+exports[`should call startLogin on button click 2`] = `
+<div>
+  <p>
+    Please login
+  </p>
+  <button
+    onClick={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+  >
+    Login
+  </button>
+</div>
+`;
+
+exports[`should render LoginPage correctly 1`] = `
+<div>
+  <p>
+    Please login
+  </p>
+  <button
+    onClick={[MockFunction]}
+  >
+    Login
+  </button>
+</div>
+`;

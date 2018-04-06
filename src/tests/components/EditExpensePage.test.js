@@ -27,15 +27,15 @@ test("should render a snapshot", () => {
 test("should handle editExpense", () => {
   expect(toJSON(wrapper)).toMatchSnapshot();
   wrapper.find("ExpenseForm").prop("onSubmit")(expenses[0]);
-  expect(history.push).toHaveBeenLastCalledWith("/");
+  expect(history.push).toHaveBeenLastCalledWith("/dashboard");
   expect(startEditExpense).toHaveBeenLastCalledWith(expenses[0].id, expenses[0]);
   expect(toJSON(wrapper)).toMatchSnapshot();
 });
 
-test("shoudl handle removeExpense", () => {
+test("should handle removeExpense", () => {
   expect(toJSON(wrapper)).toMatchSnapshot();
   wrapper.find("button").prop("onClick")(expenses[0]);
-  expect(history.push).toHaveBeenLastCalledWith("/");
+  expect(history.push).toHaveBeenLastCalledWith("/dashboard");
   expect(startRemoveExpense).toHaveBeenLastCalledWith({
     id: expenses[0].id
   })

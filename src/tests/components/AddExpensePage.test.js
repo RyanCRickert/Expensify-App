@@ -23,7 +23,7 @@ test("should render AddExpensePage correctly", () => {
 test("should handle onSubmit", () => {
   expect(toJSON(wrapper)).toMatchSnapshot();
   wrapper.find("ExpenseForm").prop("onSubmit")(expenses[1]);
-  expect(history.push).toHaveBeenLastCalledWith("/");
+  expect(history.push).toHaveBeenLastCalledWith("/dashboard");
   expect(startAddExpense).toHaveBeenLastCalledWith(expenses[1]);
   expect(toJSON(wrapper)).toMatchSnapshot();
 });

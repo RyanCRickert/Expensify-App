@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Header correctly 1`] = `
+exports[`should call startLogout on button click 1`] = `
 <header>
   <h1>
     Expensify
@@ -9,7 +9,7 @@ exports[`should render Header correctly 1`] = `
     activeClassName="is-active"
     ariaCurrent="true"
     exact={true}
-    to="/"
+    to="/dashboard"
   >
     Home
   </NavLink>
@@ -20,5 +20,72 @@ exports[`should render Header correctly 1`] = `
   >
     Create Expense
   </NavLink>
+  <button
+    onClick={[MockFunction]}
+  >
+    Logout
+  </button>
+</header>
+`;
+
+exports[`should call startLogout on button click 2`] = `
+<header>
+  <h1>
+    Expensify
+  </h1>
+  <NavLink
+    activeClassName="is-active"
+    ariaCurrent="true"
+    exact={true}
+    to="/dashboard"
+  >
+    Home
+  </NavLink>
+  <NavLink
+    activeClassName="is-active"
+    ariaCurrent="true"
+    to="/create"
+  >
+    Create Expense
+  </NavLink>
+  <button
+    onClick={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+  >
+    Logout
+  </button>
+</header>
+`;
+
+exports[`should render Header correctly 1`] = `
+<header>
+  <h1>
+    Expensify
+  </h1>
+  <NavLink
+    activeClassName="is-active"
+    ariaCurrent="true"
+    exact={true}
+    to="/dashboard"
+  >
+    Home
+  </NavLink>
+  <NavLink
+    activeClassName="is-active"
+    ariaCurrent="true"
+    to="/create"
+  >
+    Create Expense
+  </NavLink>
+  <button
+    onClick={[MockFunction]}
+  >
+    Logout
+  </button>
 </header>
 `;
