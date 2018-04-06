@@ -9,7 +9,7 @@ exports[`should call startLogout on button click 1`] = `
     activeClassName="is-active"
     ariaCurrent="true"
     exact={true}
-    to="/dashboard"
+    to="/"
   >
     Home
   </NavLink>
@@ -37,7 +37,7 @@ exports[`should call startLogout on button click 2`] = `
     activeClassName="is-active"
     ariaCurrent="true"
     exact={true}
-    to="/dashboard"
+    to="/"
   >
     Home
   </NavLink>
@@ -71,7 +71,7 @@ exports[`should render Header correctly 1`] = `
     activeClassName="is-active"
     ariaCurrent="true"
     exact={true}
-    to="/dashboard"
+    to="/"
   >
     Home
   </NavLink>
